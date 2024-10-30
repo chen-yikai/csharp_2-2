@@ -37,6 +37,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.res = new System.Windows.Forms.Label();
+            this.genRandom = new System.Windows.Forms.Button();
+            this.randomNum = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -130,11 +132,33 @@
             this.res.Size = new System.Drawing.Size(0, 20);
             this.res.TabIndex = 8;
             // 
+            // genRandom
+            // 
+            this.genRandom.Font = new System.Drawing.Font("新細明體", 15F);
+            this.genRandom.Location = new System.Drawing.Point(12, 271);
+            this.genRandom.Name = "genRandom";
+            this.genRandom.Size = new System.Drawing.Size(182, 34);
+            this.genRandom.TabIndex = 9;
+            this.genRandom.Text = "產生27~60的亂數";
+            this.genRandom.UseVisualStyleBackColor = true;
+            this.genRandom.Click += new System.EventHandler(this.genRandom_Click);
+            // 
+            // randomNum
+            // 
+            this.randomNum.AutoSize = true;
+            this.randomNum.Font = new System.Drawing.Font("新細明體", 15F);
+            this.randomNum.Location = new System.Drawing.Point(219, 278);
+            this.randomNum.Name = "randomNum";
+            this.randomNum.Size = new System.Drawing.Size(0, 20);
+            this.randomNum.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 369);
+            this.ClientSize = new System.Drawing.Size(497, 420);
+            this.Controls.Add(this.randomNum);
+            this.Controls.Add(this.genRandom);
             this.Controls.Add(this.res);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
@@ -162,6 +186,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label res;
+        private System.Windows.Forms.Button genRandom;
+        private System.Windows.Forms.Label randomNum;
     }
 }
 
